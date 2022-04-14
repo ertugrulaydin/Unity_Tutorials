@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using RocketGame.Inputs;
+using RocketGame.Movements;
 using UnityEngine;
 
 namespace RocketGame.Controllers
@@ -8,23 +9,30 @@ namespace RocketGame.Controllers
 
     public class PlayerController : MonoBehaviour
     {
-        [SerializeField] float force;
-        private Rigidbody _rigidbody;
 
-        private DefaultInput _input;
+        [SerializeField] float turnSpeed = 10f;
+        [SerializeField] float force = 50f;
+
+        DefaultInput _input;
+        Mover _mover;
+        Rotator _rotator;
 
         bool _isForceUp;
+        float _LeftRight;
 
+        public float TurnSpeed { get => turnSpeed; set => turnSpeed = value; }
+        public float Force { get => force; set => force =value; }
 
         private void Awake()
         {
-            _rigidbody = GetComponent<Rigidbody>();
             _input = new DefaultInput();
+            _mover = new Mover(this);
+            _rotator = new Rotator(this);
         }
 
         private void Update()
         {
-            Debug.Log(_input.IsForceUp);
+            
 
             if (_input.IsForceUp)
             {
@@ -34,14 +42,16 @@ namespace RocketGame.Controllers
             {
                 _isForceUp = false;
             }
+            _LeftRight = _input.LeftRight;
         }
 
         private void FixedUpdate()
         {
             if (_isForceUp)
             {
-                _rigidbody.AddForce(Vector3.up * Time.deltaTime * force);
+                _mover.FixedTick();
             }
+            _rotator.FixedTick(_LeftRight);
         }
     }
 }
