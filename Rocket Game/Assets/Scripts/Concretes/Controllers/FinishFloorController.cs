@@ -21,6 +21,7 @@ namespace RocketGame.Controllers
             {
                 finishFireworks.gameObject.SetActive(true);
                 finishLights.gameObject.SetActive(true);
+                GameManager.Instance.MissionSucced();
             }
             else
             {
