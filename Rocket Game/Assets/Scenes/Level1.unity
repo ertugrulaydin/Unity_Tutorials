@@ -192,38 +192,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 784797703124228590, guid: 8626995a49384ba41adc28a05e30a602, type: 3}
-      propertyPath: m_Mass
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 784797703124228590, guid: 8626995a49384ba41adc28a05e30a602, type: 3}
-      propertyPath: m_Constraints
-      value: 56
-      objectReference: {fileID: 0}
-    - target: {fileID: 784797703124228590, guid: 8626995a49384ba41adc28a05e30a602, type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1819156260860198251, guid: 8626995a49384ba41adc28a05e30a602, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.98
-      objectReference: {fileID: 0}
-    - target: {fileID: 3141582387110013265, guid: 8626995a49384ba41adc28a05e30a602, type: 3}
-      propertyPath: m_Size.x
-      value: 1.2526736
-      objectReference: {fileID: 0}
-    - target: {fileID: 3141582387110013265, guid: 8626995a49384ba41adc28a05e30a602, type: 3}
-      propertyPath: m_Size.y
-      value: 2.0967233
-      objectReference: {fileID: 0}
-    - target: {fileID: 3141582387110013265, guid: 8626995a49384ba41adc28a05e30a602, type: 3}
-      propertyPath: m_Center.x
-      value: 0.0006155968
-      objectReference: {fileID: 0}
-    - target: {fileID: 3141582387110013265, guid: 8626995a49384ba41adc28a05e30a602, type: 3}
-      propertyPath: m_Center.y
-      value: -0.7841922
-      objectReference: {fileID: 0}
     - target: {fileID: 3910562133354511499, guid: 8626995a49384ba41adc28a05e30a602, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -579,22 +547,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 683312367}
     m_Modifications:
-    - target: {fileID: 4420612097152305521, guid: 6579800d1446e6148bb7b20d83ce2d4b, type: 3}
-      propertyPath: m_ClearFlags
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4420612097152305521, guid: 6579800d1446e6148bb7b20d83ce2d4b, type: 3}
-      propertyPath: m_BackGroundColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4420612097152305521, guid: 6579800d1446e6148bb7b20d83ce2d4b, type: 3}
-      propertyPath: m_BackGroundColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4420612097152305521, guid: 6579800d1446e6148bb7b20d83ce2d4b, type: 3}
-      propertyPath: m_BackGroundColor.r
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4420612097152305523, guid: 6579800d1446e6148bb7b20d83ce2d4b, type: 3}
       propertyPath: m_Name
       value: GameCamera

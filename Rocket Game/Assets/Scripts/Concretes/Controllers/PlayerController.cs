@@ -10,8 +10,8 @@ namespace RocketGame.Controllers
     public class PlayerController : MonoBehaviour
     {
 
-        [SerializeField] float turnSpeed = 10f;
-        [SerializeField] float force = 50f;
+        [SerializeField] float turnSpeed = 35f;
+        [SerializeField] float force = 55f;
 
         DefaultInput _input;
         Mover _mover;
@@ -21,7 +21,7 @@ namespace RocketGame.Controllers
         float _LeftRight;
 
         public float TurnSpeed { get => turnSpeed; set => turnSpeed = value; }
-        public float Force { get => force; set => force =value; }
+        public float Force { get => force; set => force = value; }
 
         private void Awake()
         {
@@ -32,7 +32,7 @@ namespace RocketGame.Controllers
 
         private void Update()
         {
-            
+
 
             if (_input.IsForceUp)
             {
