@@ -2,7 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using RocketGame.Inputs;
 using RocketGame.Movements;
+using RocketGame.Managers;
 using UnityEngine;
+
 
 namespace RocketGame.Controllers
 {
@@ -32,6 +34,17 @@ namespace RocketGame.Controllers
             _fuel = GetComponent<Fuel>();
         }
 
+        private void OnEnable()
+        {
+            GameManager.Instance.OnGameOver += HandleOnEventTriggered;
+        }
+
+
+        private void OnDisable()
+        {
+            GameManager.Instance.OnGameOver -= HandleOnEventTriggered;
+        }
+
         private void Update()
         {
 
@@ -56,6 +69,11 @@ namespace RocketGame.Controllers
                 _fuel.FuelDecrease(0.2f);
             }
             _rotator.FixedTick(_LeftRight);
+        }
+
+        private void HandleOnEventTriggered()
+        {
+
         }
     }
 }
