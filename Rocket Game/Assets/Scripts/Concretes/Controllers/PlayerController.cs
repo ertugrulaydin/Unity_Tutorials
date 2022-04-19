@@ -20,6 +20,7 @@ namespace RocketGame.Controllers
         Rotator _rotator;
         Fuel _fuel;
 
+        bool _canMove;
         bool _canForceUp;
         float _LeftRight;
 
@@ -32,6 +33,11 @@ namespace RocketGame.Controllers
             _mover = new Mover(this);
             _rotator = new Rotator(this);
             _fuel = GetComponent<Fuel>();
+        }
+
+        private void Start()
+        {
+            _canMove = true;
         }
 
         private void OnEnable()
@@ -47,7 +53,7 @@ namespace RocketGame.Controllers
 
         private void Update()
         {
-
+            if (!_canMove) return;
 
             if (_input.IsForceUp && !_fuel.isEmpty)
             {
@@ -73,7 +79,10 @@ namespace RocketGame.Controllers
 
         private void HandleOnEventTriggered()
         {
-
+            _canMove = false;
+            _canForceUp = false;
+            _LeftRight = 0f;
+            _fuel.FuelIncrease(0f);
         }
     }
 }
