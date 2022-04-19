@@ -105,6 +105,7 @@ GameObject:
   - component: {fileID: 7785653263773588263}
   - component: {fileID: 8902972877656812178}
   - component: {fileID: 340433886895987074}
+  - component: {fileID: 825738649}
   m_Layer: 0
   m_Name: StartFloor
   m_TagString: Untagged
@@ -154,7 +155,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 60e6a10518079ad4294253ea61729d8a, type: 2}
+  - {fileID: 2100000, guid: 6bdfb78f9edfef04bad44d04318f6ba9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -189,3 +190,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &825738649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4034053229888760552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49bb4a2da58d70f459c4a6b36a9e5d7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
