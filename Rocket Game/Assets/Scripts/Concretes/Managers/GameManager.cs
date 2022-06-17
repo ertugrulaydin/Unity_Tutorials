@@ -54,7 +54,7 @@ namespace RocketGame.Managers
             yield return SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + levelIndex);
         }
 
-        public void MenuScene()
+        public void LoadMenuScene()
         {
             StartCoroutine(LoadMenuSceneAsync());
         }
