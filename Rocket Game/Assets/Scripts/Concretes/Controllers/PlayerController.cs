@@ -27,6 +27,8 @@ namespace RocketGame.Controllers
         public float TurnSpeed { get => turnSpeed; set => turnSpeed = value; }
         public float Force { get => force; set => force = value; }
 
+        public bool CanMove => _canMove;
+
         private void Awake()
         {
             _input = new DefaultInput();
