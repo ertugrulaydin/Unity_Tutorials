@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 6762745454628419101}
   - component: {fileID: 1732787702682787738}
   - component: {fileID: 3174151327453520146}
-  - component: {fileID: 5681347687721704294}
+  - component: {fileID: 1010122910718148103}
   m_Layer: 0
-  m_Name: Wall
+  m_Name: StaticWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 4776017105090527550}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.39, y: 3.8, z: -1.29}
-  m_LocalScale: {x: 1, y: 10, z: 5}
+  m_LocalScale: {x: 1, y: 24, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -96,7 +96,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5681347687721704294
+--- !u!114 &1010122910718148103
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -105,6 +105,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 4776017105090527550}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 076ff3d64fb16884c95b2bad0071fb14, type: 3}
+  m_Script: {fileID: 11500000, guid: 6ea0e2e89fee70146afa0215b3e33194, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

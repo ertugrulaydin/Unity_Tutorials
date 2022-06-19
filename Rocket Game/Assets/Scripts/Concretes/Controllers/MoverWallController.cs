@@ -1,18 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
+using RocketGame.Abstracts.Controllers;
 using UnityEngine;
 
-public class MoverWallController : MonoBehaviour
+public class MoverWallController : WallController
 {
-    // Start is called before the first frame update
-    void Start()
+
+    [SerializeField] Vector3 _direction;
+    [Range(0f, 1f)]
+    [SerializeField] float _factor;
+
+    Vector3 _startPosition;
+
+    private void Awake()
     {
-        
+        _startPosition = transform.position;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        Vector3 offset = _direction * _factor;
+        transform.position = offset + _startPosition;
     }
 }

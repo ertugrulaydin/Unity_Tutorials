@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using RocketGame.Managers;
+using RocketGame.Controllers;
 
-namespace RocketGame.Controllers
+namespace RocketGame.Abstracts.Controllers
 {
-    public class WallController : MonoBehaviour
+    public abstract class WallController : MonoBehaviour
     {
 
         public void OnCollisionEnter(Collision other)
