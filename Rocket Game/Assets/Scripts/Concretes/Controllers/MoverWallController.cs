@@ -6,6 +6,8 @@ using UnityEngine;
 public class MoverWallController : WallController
 {
 
+
+
     [SerializeField] Vector3 _direction;
     [Range(0f, 1f)]
     [SerializeField] float _factor;
@@ -14,14 +16,17 @@ public class MoverWallController : WallController
     Vector3 _startPosition;
     const float FULL_CIRCLE = Mathf.PI * 2f;  //2piR
 
+
     private void Awake()
     {
         _startPosition = transform.position;
+        _factor = 0.469f;
     }
 
     private void Start()
     {
-        transform.position = _startPosition;
+
+
     }
 
     private void Update()

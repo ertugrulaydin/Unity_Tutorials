@@ -4,6 +4,7 @@ using UnityEngine;
 using RocketGame.Managers;
 
 
+
 namespace RocketGame.UIs
 {
     public class GameOverObject : MonoBehaviour
@@ -32,7 +33,9 @@ namespace RocketGame.UIs
         {
             if (!_gameOverPanel.activeSelf)
             {
+
                 _gameOverPanel.SetActive(true);
+
             }
         }
     }

@@ -46,6 +46,7 @@ namespace RocketGame.Managers
 
         public void LoadLevelScene(int levelIndex = 0)
         {
+
             StartCoroutine(LoadLevelSceneAsync(levelIndex));
         }
 
